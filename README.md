@@ -30,3 +30,6 @@ During our data exploration phase we wanted to find a reliable and thorough data
 * In our analysis we have categorized the factors which affect the desirability of the home
 * We have used SQL to join our data for further assessment
 * We have used tableau to help visualize our findings
+
+# Communication Protocols
+In order to optimize communication throughout this project, several platforms were utilized, including but not limited to: Slack, SMS, and e-mail. The group has also made efforts to meet in person to allow for freer discussion.
