@@ -1,35 +1,35 @@
-CREATE TABLE "housing_table" (
-    "SITE_ADDRE" VARCHAR(200)   NOT NULL,
-    "CITY" VARCHAR(100)   NOT NULL,
-    "ZIP_CODE" INT   NOT NULL,
-    "ZONING" VARCHAR(50)   NOT NULL,
-    "SALE_PRICE" VARCHAR(100)   NOT NULL,
-    "SALE_DATE" VARCHAR(100)   NOT NULL,
-    "BILLING_CLASS" INT   NOT NULL,
-    "YEAR_BUILT" INT   NOT NULL,
-    "UNITS" INT   NOT NULL,
-    "DESIGN_STYLE" VARCHAR(50)   NOT NULL,
-    CONSTRAINT "pk_housing_table" PRIMARY KEY (
+CREATE TABLE "housing" (
+    "SITE_ADDRE" varchar(100)   NOT NULL,
+    "CITY" varchar(50)   NOT NULL,
+    "ZIP_CODE" int   NOT NULL,
+    "ZONING" varchar(50)   NOT NULL,
+    "SALE_PRICE" varchar(100)   NOT NULL,
+    "SALE_DATE" varchar(100)   NOT NULL,
+    "BILLING_CLASS" int   NOT NULL,
+    "YEAR_BUILT" int   NOT NULL,
+    "UNITS" int   NOT NULL,
+    "DESIGN_STYLE" varchar(50)   NOT NULL,
+    CONSTRAINT "pk_housing" PRIMARY KEY (
         "SITE_ADDRE"
      )
 );
 
-CREATE TABLE "noise_table" (
-    "TOTAL_VALU" INT   NOT NULL,
-    "SITE_ADDRE" VARCHAR(200)   NOT NULL,
-    "AIR_NOISE" INT   NOT NULL
+CREATE TABLE "noise" (
+    "TOTAL_VALU" int   NOT NULL,
+    "SITE_ADDRE" varchar(200)   NOT NULL,
+    "AIR_NOISE" int   NOT NULL
 );
 
-CREATE TABLE "crime_table" (
-    "CITY" VARCHAR(50)   NOT NULL,
-    "YEAR_RANGE" VARCHAR   NOT NULL,
-    "VIOLENT_CRIMES" INT   NOT NULL,
-    "PROPERTY_CRIMES" INT   NOT NULL,
-    "TOTAL_CRIMES" INT   NOT NULL
+CREATE TABLE "crime" (
+    "CITY" varchar(50)   NOT NULL,
+    "YEAR_RANGE" varchar(50)   NOT NULL,
+    "VIOLENT_CRIMES" int   NOT NULL,
+    "PROPERTY_CRIMES" int   NOT NULL,
+    "TOTAL_CRIMES" int   NOT NULL,
+    CONSTRAINT "pk_crime" PRIMARY KEY (
+        "CITY"
+     )
 );
 
-ALTER TABLE "noise_table" ADD CONSTRAINT "fk_noise_table_SITE_ADDRE" FOREIGN KEY("SITE_ADDRE")
-REFERENCES "housing_table" ("SITE_ADDRE");
-
-ALTER TABLE "crime_table" ADD CONSTRAINT "fk_crime_table_CITY" FOREIGN KEY("CITY")
-REFERENCES "housing_table" ("CITY");
+ALTER TABLE "housing" ADD CONSTRAINT "fk_housing_CITY" FOREIGN KEY("CITY")
+REFERENCES "crime" ("CITY");
