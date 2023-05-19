@@ -16,11 +16,8 @@ CREATE TABLE "housing_table" (
 
 CREATE TABLE "noise_table" (
     "TOTAL_VALU" INT   NOT NULL,
-	"SITE_ADDRE" VARCHAR(200)   NOT NULL,
-    "AIR_NOISE" INT   NOT NULL,
-    CONSTRAINT "pk_noise_table" PRIMARY KEY (
-        "SITE_ADDRE"
-     )
+    "SITE_ADDRE" VARCHAR(200)   NOT NULL,
+    "AIR_NOISE" INT   NOT NULL
 );
 
 CREATE TABLE "crime_table" (
@@ -28,8 +25,11 @@ CREATE TABLE "crime_table" (
     "YEAR_RANGE" VARCHAR   NOT NULL,
     "VIOLENT_CRIMES" INT   NOT NULL,
     "PROPERTY_CRIMES" INT   NOT NULL,
-    "TOTAL_CRIMES" INT   NOT NULL,
-    CONSTRAINT "pk_crime_table" PRIMARY KEY (
-        "CITY"
-     )
+    "TOTAL_CRIMES" INT   NOT NULL
 );
+
+ALTER TABLE "noise_table" ADD CONSTRAINT "fk_noise_table_SITE_ADDRE" FOREIGN KEY("SITE_ADDRE")
+REFERENCES "housing_table" ("SITE_ADDRE");
+
+ALTER TABLE "crime_table" ADD CONSTRAINT "fk_crime_table_CITY" FOREIGN KEY("CITY")
+REFERENCES "housing_table" ("CITY");
