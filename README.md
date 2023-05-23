@@ -17,7 +17,8 @@ Wake County, NC, is a growing area that is drawing people to move to from all ov
     * Amenities access: walking score, transit score, school rating 
 * USDOT National Transportation Noise Map data
   * Noise Rasters converted to CSV with ArcGIS to assess dB from transportation impacting a properties/parcel sound level
-
+Wake County Crime Data source:
+https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend
 # Questions To Answer
 * What is the best location based on our factors?
     * Input based on relationship status: Single, Married, Has Children
