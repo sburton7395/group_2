@@ -7,7 +7,7 @@ Wake County, NC, is a growing area that is drawing people to move to from all ov
 # Our Data
 * Wake County residential data
   * Location address, zip code, zoning, property status
-* Local City Police Department crime data
+* Local City Police Department crime data in Wake County
   * Crime rate by municipality
 * Zillow housing market data <b>(currently unable to implement)</b>
   * Finding home valuation
