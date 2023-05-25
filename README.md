@@ -36,3 +36,10 @@ During our data exploration phase we wanted to find a reliable and thorough data
 
 # Communication Protocols
 In order to optimize communication throughout this project, several platforms were utilized, including but not limited to: Slack, SMS, and e-mail. The group has also made efforts to meet in person to allow for freer discussion.
+
+# Why we chose SQLite for Our Database Model over AWS and PostgresSQL
+* For this project we had the choice of using either AWS or SQLite. We went with SQLite because it is a lightweight, file-based relational database management system (RDBMS) that is well suited for small- scale   * projects like ours. AWS offers a wide range of database options. 
+* AWS can be more expensive than SQLite, especially for small-scale projects and also more complex to setup and manage. 
+* Another Database Model we could use is PostgreSQL. While both are free and Open-source RDBMS, there are a few key differences. SQLite is a Serverless DBMS able to run in your applications and PostgreSQL is set * * up to run over a network. Like AWS PostgreSQL has a much larger size and is more complex which makes SQLite more appropriate and user-friendly for our project.
+* Because SQLite stores its database in one ordinary disk file in any location within the directory, it makes SQLite one of the most portable RDBMS. SQLite also uses much less memory than PostgresSQL.
+* We therefore decided to work with SQLite for the purpose of our final project.
