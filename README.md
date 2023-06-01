@@ -7,7 +7,7 @@ Wake County, NC, is a popular area that is growing twice as quickly as the rest 
 ### Our Data
 * [Wake County residential data](https://www.wake.gov/departments-government/tax-administration/data-files-statistics-and-reports/real-estate-property-data-files)
   * Total value, site address, city, zip code, planning jurisdiction, zoning, acreage, heated area, age, bath count, remodel/addition status, style
-  * <sub>NOTE: A key to the data fields in our housing data is located HERE (ADD LINK)</sub>
+  * <sub>NOTE: A key to the data fields in our housing data is located [here](resources/clean/housing_data_fields_key.docx)</sub>
 * [Local City Police Department crime data in Wake County](https://www.wake.gov/departments-government/city-county-bureau-identification-ccbi/criminal-arrest-records)
   * Crime counts by municipality; separated into personal, property-based, and drug-based crimes
 * [USDOT National Transportation Noise Map data](https://maps.dot.gov/BTS/NationalTransportationNoiseMap/)
