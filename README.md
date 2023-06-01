@@ -1,41 +1,26 @@
-# Group 2: Julius Richards, Ramley Porro, Stacy Burton, Zachary Barham
-# Where is the best place to move in Wake County - A look at factors that affect the best place to live in Wake County
+# Group 2: Zachary Barham, Stacy Burton, Ramley Porro, Julius Richards
+# How do external factors - noise pollution levels and crime rates - affect housing prices in Wake County, NC?
 
-# Why?
-Wake County, NC, is a growing area that is drawing people to move to from all over the country. Moving to a new area that you know nothing about is a daunting and potentially scary task; it would be fantastic to have a guide helping you find a home in a highly desirable location. Whether you are moving from afar or a local looking to make the best move we want to help you pick a home in a location that you will love.
+# What are we looking for? Why?
+Wake County, NC, is a popular area that is growing twice as quickly as the rest of North Carolina, [at a rate of 62 people per day](https://www.wake.gov/departments-government/planning-development-inspections/planning/census-demographics/growth-and-population-trends). With this comes an increase in housing demands, leading to rising interest in the housing market. With an abundance of well-documented data surrounding the topic, we wanted to assess the correlation between the values of single-family homes, noise pollution levels, and crime rates within the county.
 
 # Our Data
-* Wake County residential data
-  * Location address, zip code, zoning, property status
-* Local City Police Department crime data in Wake County
-  * Crime rate by municipality
-* Zillow housing market data <b>(currently unable to implement)</b>
-  * Finding home valuation
-  * Assessing home features
-    * Room, bath, accurate sq ft, parking
-  * Community scores
-    * Amenities access: walking score, transit score, school rating 
-* USDOT National Transportation Noise Map data
+* [Wake County residential data](https://www.wake.gov/departments-government/tax-administration/data-files-statistics-and-reports/real-estate-property-data-files)
+  * Total value, site address, city, zip code, planning jurisdiction, zoning, acreage, heated area, age, bath count, remodel/addition status, style
+    <sub>NOTE: A key to the data fields in our housing data is located HERE (ADD LINK)</sub>
+* [Local City Police Department crime data in Wake County](https://www.wake.gov/departments-government/city-county-bureau-identification-ccbi/criminal-arrest-records)
+  * Crime counts by municipality; separated into personal, property-based, and drug-based crimes
+* [USDOT National Transportation Noise Map data](https://maps.dot.gov/BTS/NationalTransportationNoiseMap/)
   * Noise Rasters converted to CSV with ArcGIS to assess dB from transportation impacting a properties/parcel sound level
-Wake County Crime Data source:
-https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend
-# Questions To Answer
-* What is the best location based on our factors?
-    * Input based on relationship status: Single, Married, Has Children
-* Do the factors we estimate make a home desirable also correlate with the cost to purchase?
-* How does where we choose to live affect home cost and what factors affect this?
 
 # Data Exploration
-During our data exploration phase we wanted to find a reliable and thorough dataset to begin our analysis, we found this in the Wake County tax data. While the tax data had quite a lot of information we decided to remove all of the data that did not affect the attributes of the home or it’s location. Looking outside of the data presented by the county, we found transportation noise rasters to be able to assess how sound can impact the comfort of a home. We used GIS to relate the dB level raster with the tax parcel data to use alongside our other sources. To find crime rates we had to pull data from many cities around the county but were able to find the needed tables to work with.
+During our data exploration phase we wanted to find a reliable and thorough dataset to begin our analysis, we found this in the Wake County tax data. While the tax data had quite a lot of information we decided to remove all of the data that did not affect the attributes of the home or its location. Looking outside of the data presented by the county, we found transportation noise rasters to be able to assess how sound can impact the comfort of a home. We used GIS to relate the dB level raster with the tax parcel data to use alongside our other sources. To find crime rates we had to pull data from many cities around the county but were able to find the needed tables to work with.
 
-# Analysis Phase - In Progress
+# Analysis Phase
 * In our analysis we have categorized the factors which affect the desirability of the home
 * We have used SQL to join our data for further assessment
 * We have used tableau to help visualize our findings
 * We have created a SQLite database to connect to to our dataset away from a local database environment to best work with the data as a group and to share with those who would like to test our code.
-
-# Communication Protocols
-In order to optimize communication throughout this project, several platforms were utilized, including but not limited to: Slack, SMS, and e-mail. The group has also made efforts to meet in person to allow for freer discussion.
 
 # Why we chose SQLite for Our Database Model over AWS and PostgresSQL
 * For this project we had the choice of using either AWS or SQLite. We went with SQLite because it is a lightweight, file-based relational database management system (RDBMS) that is well suited for small- scale   * projects like ours. AWS offers a wide range of database options. 
