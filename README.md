@@ -45,3 +45,34 @@ To begin our model we did pre-processing of the dataset, which involved cleaning
  * Accuracy:
    
    ![Accuracy Output](images/machine_learning/RandomForestClassifierModel_AccuracyOutput.png)
+
+
+
+
+### Tableau 
+In Tableau, we visualized the crime rates per municipality and the noise pollution per zip code. We gave the user a drop-down menu for crime rates to choose which category they want to see. Crime counts are categorized according to their municipality. For noise pollution, we created a scale from zero to five to describe the decibel levels more easily. Grouped by zip code, blue areas have no significant transportation noise, while orange and red areas have higher levels of noise (meaning they’re closer to airports and train stations). The median decibel level above zero determines each zip code's color.
+
+* Personal Crimes 
+![Personal_Crimes](https://github.com/sburton7395/group_2/assets/118011002/15a3b7e0-5dfe-4184-b35d-0c6619469fc5)
+
+* Drug Crimes
+![Drug_Crimes](https://github.com/sburton7395/group_2/assets/118011002/7cf8201a-7927-4c5c-9e44-bca9b6ca0122)
+
+* Property Crimes 
+![Property_Crimes](https://github.com/sburton7395/group_2/assets/118011002/76dc8a20-5fb4-4ca3-a31d-1f146b2746f8)
+
+* Noise Pollution 
+![Noise_Pollution](https://github.com/sburton7395/group_2/assets/118011002/6cdc7180-b38d-4c01-be0e-ca7d63074398)
+
+* Dashboard
+![Dashboard](https://github.com/sburton7395/group_2/assets/118011002/e48d3b56-23f6-4a39-9734-53e342a85e63)
+
+
+* Machine learning Output visualization
+ 
+This is the column of output from our Random Forest Classifier model estimating which homes fall within the category of "LOW", "MEDIUM", and "HIGH" value homes. We can show this as a bar chart of distribution of value in Wake County estimated by our model to 91.76% accuracy.
+
+![ML_Output](https://github.com/sburton7395/group_2/assets/118011002/be0e1b25-19de-4c73-bfd4-79e476f612a5)
+
+
+
