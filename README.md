@@ -35,10 +35,10 @@ During our data exploration phase we wanted to find a reliable and thorough data
 
 ### Machine Learning Model
 To begin our model we did pre-processing of the dataset, which involved cleaning the data and handling missing values. Next, we performed feature selection and engineering to pick the most relevant variables. We initially selected a Linear Regression model for its simplicity and interpretability, although it didn't yield the strongest results. Wanting to improve our model performance, we then opted for a Random Forest Classifier. The dataset was transformed to accommodate this model, with our target variable 'TOTAL_VALUE' being converted to categorical values representing 'Low', 'Medium', and 'High' price ranges. We divided our data into training and testing sets, and then proceeded to train our Random Forest model. The final model demonstrated an impressive accuracy of approximately 91.76%, a substantial improvement over the initial Linear Regression model. The outcomes were evaluated using a confusion matrix, which demonstrated our model's ability to predict the housing prices with a reasonable degree of precision across various price ranges.
-# Random Forest Classifier Model Output:
-* Confusion Matrix:
- * ![Confusion Matrix Output](images/machine_learning/RandomForestClassifierModel_ConfusionMatrix.png)
-* Classification Report:
- * ![Classification Report Output](images/machine_learning/RandomForestClassifierModel_ClassificationReport.png)
-* Accuracy:
- * ![Accuracy Output](images/machine_learning/RandomForestClassifierModel_AccuracyOutput.png)
+* Random Forest Classifier Model Output:
+ * Confusion Matrix:
+   ![Confusion Matrix Output](images/machine_learning/RandomForestClassifierModel_ConfusionMatrix.png)
+ * Classification Report:
+   ![Classification Report Output](images/machine_learning/RandomForestClassifierModel_ClassificationReport.png)
+ * Accuracy:
+   ![Accuracy Output](images/machine_learning/RandomForestClassifierModel_AccuracyOutput.png)
