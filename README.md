@@ -14,7 +14,7 @@ Wake County, NC, is a growing area that is drawing people to move to from all ov
   * Assessing home features
     * Room, bath, accurate sq ft, parking
   * Community scores
-    * Amenities access: walking score, transit score, school rating 
+    * Amenities access: walking score, transit score, school rating, etc.
 * USDOT National Transportation Noise Map data
   * Noise Rasters converted to CSV with ArcGIS to assess dB from transportation impacting a properties/parcel sound level
 
